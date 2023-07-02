@@ -15,7 +15,7 @@
     
     - name: Send a message to chat in playbook
       community.general.telegram:
-        token: {{ TELEGRAM_TOKEN }}
+        token: "{{ TELEGRAM_TOKEN }}"
         api_args:
           chat_id: {{ TELEGRAM_CHANNEL_ID }}
           parse_mode: "markdown"

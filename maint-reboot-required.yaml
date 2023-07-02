@@ -17,7 +17,7 @@
       community.general.telegram:
         token: "{{ TELEGRAM_TOKEN }}"
         api_args:
-          chat_id: {{ TELEGRAM_CHANNEL_ID }}
+          chat_id: "{{ TELEGRAM_CHANNEL_ID }}"
           parse_mode: "markdown"
           text: "Ansible task finished"
         

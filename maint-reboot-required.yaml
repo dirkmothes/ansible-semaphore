@@ -19,6 +19,6 @@
         api_args:
           chat_id: "{{ TELEGRAM_CHANNEL_ID }}"
           parse_mode: "markdown"
-          text: "Ansible task finished"
+          text: "Ansible: Reboot required {{ansible_hostname}}"
       when: reboot_required.stat.exists
         

@@ -24,8 +24,4 @@
 
     - name: Send a message via pushover
       community.general.pushover:
-        title: 'Ansible'
-        msg: 'Ansible: Reboot required {{ansible_hostname}}'
-        app_token: ab1jtdgedasaq42o1uvh3imu1ux6is
-        user_key: up4q1tn9oxkh9v1h22x3woagpkkqjb
-        device: galaxys8
+        

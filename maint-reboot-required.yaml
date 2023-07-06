@@ -24,8 +24,8 @@
 
     - name: Send a message via pushover
       community.general.pushover:
-        title: 'Ansible'
-        msg: 'Ansible: Reboot required {{ansible_hostname}}'
-        app_token: {{ PUSHOVER_TOKEN }}
-        user_key: {{ PUSHOVER_USER_KEY }}
-        device: {{ PUSHOVER_DEVICE }}
+        title: "Ansible"
+        msg: "Ansible: Reboot required {{ansible_hostname}}"
+        app_token: "{{ PUSHOVER_TOKEN }}"
+        user_key: "{{ PUSHOVER_USER_KEY }}"
+        device: "{{ PUSHOVER_DEVICE }}"

@@ -29,3 +29,4 @@
         app_token: "{{ PUSHOVER_TOKEN }}"
         user_key: "{{ PUSHOVER_USER_KEY }}"
         device: "{{ PUSHOVER_DEVICE }}"
+      when: reboot_required.stat.exists

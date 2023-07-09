@@ -9,9 +9,9 @@
         path: /var/run/reboot-required
       register: reboot_required
       
-    - debug:
-        msg: "Reboot is required"
-      when: reboot_required.stat.exists
+#    - debug:
+#        msg: "Reboot is required"
+#      when: reboot_required.stat.exists
     
 #    - name: Send a message to chat in playbook
 #      community.general.telegram:
